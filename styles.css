@@ -34,7 +34,7 @@ input[type="text"]{
   background-color:#123285;
   border: none;
   border-bottom: 0.5px solid white;
-  width: 90%;
+  width: 50%;
   margin-bottom: 20px;
 }
 /* city
@@ -52,8 +52,23 @@ input[type="text"]{
 }
 /* temperature
 -------------------------------------------- */
+.temp{
+  display: flex;
+  justify-content: center;
+}
+.feel-like{
+  font-size: 30px;
+  font-family: 'Krona One', sans-serif;
+}
+.feel h5{
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+.unit{
+  font-weight: 100;
+}
 .celsius{
-  font-size: 130px;
+  font-size: 100px;
   font-weight: 100;
 }
 .temp{
@@ -62,9 +77,9 @@ input[type="text"]{
   align-items: center; 
 }
 .temperature{
-  font-size: 130px;
+  font-size: 100px;
   font-weight: 1000;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Krona One', sans-serif;
   text-align: left;
   margin: 0;
 }
@@ -74,6 +89,7 @@ h2{
 .weather-icon{
   margin-bottom: 50px;
 }
+
 /* footer
 ------------------------------------------------------ */
 table{
@@ -91,7 +107,7 @@ table td {
   /* content
   ------------------------------------------------------- */
   .content-wrap{
-    width: 80%;
+    width: 90%;
     /* height: 100%; */
   }
   .content{
@@ -114,7 +130,7 @@ table td {
     background-color:#123285;
     border: none;
     border-bottom: 0.5px solid white;
-    width: 90%;
+    width: 50%;
     margin-bottom: 20px;
   }
   /* city
@@ -129,6 +145,20 @@ table td {
   }
   /* temperature
   -------------------------------------------- */
+  .temp{
+    display: flex;
+    justify-content: center;
+  }
+  .feel-like{
+    font-size: 20px;
+  }
+  .feel h5{
+    letter-spacing: 3px;
+    font-size: 13px;
+  }
+  .unit{
+    font-weight: 100;
+  }
   .celsius{
     font-size: 70px;
     font-weight: 100;
@@ -141,9 +171,6 @@ table td {
   .temperature{
     font-size: 70px;
     font-weight: 1000;
-    text-align: left;
-  }
-  h2{
     text-align: left;
   }
   /* footer

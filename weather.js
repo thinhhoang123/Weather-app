@@ -5,6 +5,7 @@ const local         = document.querySelector('.local');
 const icon          = document.querySelector('#icon');
 const condition     = document.querySelector('.condition');
 const temperature   = document.querySelector('.temperature');
+const feelLike      = document.querySelector('.feel-like');
 const humidity      = document.querySelector('.humidity');
 const wind          = document.querySelector('.wind-speed');
 const sunrise       = document.querySelector('.sunrise');
@@ -22,7 +23,6 @@ function formattedTime(unix_timestamp) {
     // Will display time in 10:30:23 format
     var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
     return formattedTime;
-
 }
 
 searchInput.addEventListener('change', (even) =>{
@@ -34,6 +34,7 @@ searchInput.addEventListener('change', (even) =>{
         local.innerHTML         = data.name || '---';
         condition.innerHTML     = data.weather[0].description ;
         temperature.innerHTML   = Math.round(data.main.temp);
+        feelLike.innerHTML      = data.main.feels_like;
         humidity.innerHTML      = data.main.humidity;
         wind.innerHTML          = (data.wind.speed * 3.6).toFixed(2);
         sunrise.innerHTML       = formattedTime(data.sys.sunrise);
